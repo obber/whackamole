@@ -71,8 +71,6 @@ class Whackamole extends Component {
   }
 
   activateRandomMole = () => {
-    // First chose to do random index for only moles that are inactive.
-    // but this turned out to be overwhelming.
     const randomMoleIndex = Math.floor(Math.random() * this.state.moles.length);
     if (!this.state.moles[randomMoleIndex]) {
       this.activateMole(randomMoleIndex);
@@ -109,8 +107,6 @@ class Whackamole extends Component {
           text="Start Round"
           onClick={this.startRound}
         />
-        <div className="counters-container">
-        </div>
         <Counters
           whackCount={this.state.whacks}
           time={this.state.time}
