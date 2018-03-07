@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bungee', cursive;
+}
+
+button {
+  font-family: 'Bungee', cursive;
+}
+
+.whackamole {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.start-game {
+  margin: auto;
+  display: block;
+}
+
+.logo {
+  text-align: center;
+  margin: 30px;
+}

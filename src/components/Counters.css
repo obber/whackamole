@@ -1,0 +1,22 @@
+.counters-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.single-counter {
+  border: 1px solid black;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.counters-container h1,
+.counters-container h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.counters-container h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
