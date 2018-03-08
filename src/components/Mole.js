@@ -4,6 +4,15 @@ import './Mole.css';
 
 // props = active, id, onWhack
 class Mole extends Component {
+
+  shouldComponentUpdate(nextProps) {
+    if (nextProps.active !== this.props.active) {
+      return true;
+    }
+
+    return false;
+  }
+
   setContainerClassName() {
     const { active } = this.props;
     return `mole-container ${active ? "active" : "inactive"}`;
