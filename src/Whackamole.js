@@ -31,7 +31,8 @@ class Whackamole extends Component {
     this.stopMoles();
     this.deactivateAllMoles();
     this.setState({
-      highScore: Math.max(whacks, highScore)
+      highScore: Math.max(whacks, highScore),
+      gameActive: false,
     });
   }
   
